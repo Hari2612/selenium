@@ -3,16 +3,26 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test name="Command line test(failed)">
     <classes>
-      <class name="com.webpp.TestLinkedinLoginPage">
+      <class name="com.webpp.SpeechTest">
         <methods>
-          <include name="g"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- com.webpp.TestLinkedinLoginPage -->
+      </class> <!-- com.webpp.SpeechTest -->
       <class name="com.webpp.Test99GuruLogin">
         <methods>
           <include name="test_Home_Page_Appear_Correct"/>
         </methods>
       </class> <!-- com.webpp.Test99GuruLogin -->
+      <class name="com.webpp.TestUpload">
+        <methods>
+          <include name="startBrowser"/>
+        </methods>
+      </class> <!-- com.webpp.TestUpload -->
+      <class name="com.webpp.TestLinkedinLoginPage">
+        <methods>
+          <include name="g"/>
+        </methods>
+      </class> <!-- com.webpp.TestLinkedinLoginPage -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

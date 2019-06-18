@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.webpp.TestLinkedinLoginPage"/>
+      <class name="com.webpp.SpeechTest"/>
       
     </classes>
   </test> <!-- Test -->

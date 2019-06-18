@@ -23,7 +23,7 @@ public class TestLinkedinLoginPage extends LinkedinLoginPage {
 		  String[] str = obj.read(br);
 		  
 		  
-		  String[] ans = new String[10];
+		  String[] ans = new String[10]; 
 		  String[] res = new String[10];
 		  
 		  selectBrowser(str[3]);

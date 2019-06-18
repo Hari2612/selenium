@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 117.184 sec <<< FAILURE!
-test_Home_Page_Appear_Correct(com.webpp.Test99GuruLogin)  Time elapsed: 65.988 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name='uid']
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 70.255 sec <<< FAILURE!
+startBrowser(com.webpp.TestUpload)  Time elapsed: 70.068 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: #photo
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PF00WYQS', ip: '10.35.156.217', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+System info: host: 'PF00WYQS', ip: '192.168.43.144', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.5, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10540, moz:profile: C:\Users\gkokz\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ce2e8469-f3be-4256-9d75-59dc7c01b4ed
-*** Element info: {Using=name, value=uid}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190607204818, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7268, moz:profile: C:\Users\gkokz\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cdfc6e78-3fa8-425c-8749-0855b0dd933c
+*** Element info: {Using=id, value=photo}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -22,18 +22,8 @@ Session ID: ce2e8469-f3be-4256-9d75-59dc7c01b4ed
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy6.sendKeys(Unknown Source)
-	at com.webp.Guru99Login.setUserName(Guru99Login.java:38)
-	at com.webp.Guru99Login.loginToGuru99(Guru99Login.java:68)
-	at com.webpp.Test99GuruLogin.test_Home_Page_Appear_Correct(Test99GuruLogin.java:76)
-
-g(com.webpp.TestLinkedinLoginPage)  Time elapsed: 49.163 sec  <<< FAILURE!
-java.lang.NullPointerException
-	at utils.ExcelDetails.writeExcel(ExcelDetails.java:171)
-	at com.webpp.TestLinkedinLoginPage.g(TestLinkedinLoginPage.java:50)
+	at com.webpp.TestUpload.startBrowser(TestUpload.java:56)
 

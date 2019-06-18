@@ -3,11 +3,11 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.webpp.TestLinkedinLoginPage">
+      <class name="com.webpp.SpeechTest">
         <methods>
-          <include name="g"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- com.webpp.TestLinkedinLoginPage -->
+      </class> <!-- com.webpp.SpeechTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

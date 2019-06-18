@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="2" name="TestSuite" time="115.151" errors="0" skipped="0">
+<testsuite tests="5" failures="1" name="TestSuite" time="140.137" errors="0" skipped="4">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_25\jre\bin"/>
@@ -27,9 +27,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Farmrise\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3338167171363398339.tmp"/>
+    <property name="classworlds.conf" value="C:\Farmrise\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4627250452549922996.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_25/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_25/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_25/bin/../jre/lib/amd64;C:\Program Files (x86)\Worksoft\Certify\Client;C:\Program Files (x86)\Worksoft\Certify\Interface Client\Worksoft\wsTest\ImageMatching\Opencv\x64\vc10\bin;C:\Program Files (x86)\Worksoft\Certify\Interface Client\Worksoft\wsTest\ImageMatching\Opencv\x86\vc10\bin;C:\Program Files\Java\jdk1.8.0_25\bin;C:\Program Files\Java\jre1.8.0_25\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\WebEx\Productivity Tools;C:\Users\gkokz\Downloads\chromedriver_win32\;;C:\Users\gkokz\Downloads\eclipse;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_25/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_25/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_25/bin/../jre/lib/amd64;C:\Program Files (x86)\Worksoft\Certify\Client;C:\Program Files (x86)\Worksoft\Certify\Interface Client\Worksoft\wsTest\ImageMatching\Opencv\x64\vc10\bin;C:\Program Files (x86)\Worksoft\Certify\Interface Client\Worksoft\wsTest\ImageMatching\Opencv\x86\vc10\bin;C:\Program Files\Java\jdk1.8.0_25\bin;C:\Program Files\Java\jre1.8.0_25\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\WebEx\Productivity Tools;C:\Users\gkokz\Downloads\chromedriver_win32\;C:\Program Files\Git\cmd;C:\Users\gkokz\Downloads\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,22 +61,22 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.webpp.Test99GuruLogin" name="test_Home_Page_Appear_Correct" time="65.988">
-    <failure message="Unable to locate element: *[name=&apos;uid&apos;]
+  <testcase classname="com.webpp.TestUpload" name="startBrowser" time="70.068">
+    <failure message="Unable to locate element: #photo
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PF00WYQS&apos;, ip: &apos;10.35.156.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+System info: host: &apos;PF00WYQS&apos;, ip: &apos;192.168.43.144&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.5, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10540, moz:profile: C:\Users\gkokz\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ce2e8469-f3be-4256-9d75-59dc7c01b4ed
-*** Element info: {Using=name, value=uid}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name=&apos;uid&apos;]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190607204818, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7268, moz:profile: C:\Users\gkokz\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cdfc6e78-3fa8-425c-8749-0855b0dd933c
+*** Element info: {Using=id, value=photo}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: #photo
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PF00WYQS&apos;, ip: &apos;10.35.156.217&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+System info: host: &apos;PF00WYQS&apos;, ip: &apos;192.168.43.144&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.5, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10540, moz:profile: C:\Users\gkokz\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ce2e8469-f3be-4256-9d75-59dc7c01b4ed
-*** Element info: {Using=name, value=uid}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190607204818, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7268, moz:profile: C:\Users\gkokz\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cdfc6e78-3fa8-425c-8749-0855b0dd933c
+*** Element info: {Using=id, value=photo}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -88,68 +88,40 @@ Session ID: ce2e8469-f3be-4256-9d75-59dc7c01b4ed
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy6.sendKeys(Unknown Source)
-	at com.webp.Guru99Login.setUserName(Guru99Login.java:38)
-	at com.webp.Guru99Login.loginToGuru99(Guru99Login.java:68)
-	at com.webpp.Test99GuruLogin.test_Home_Page_Appear_Correct(Test99GuruLogin.java:76)
+	at com.webpp.TestUpload.startBrowser(TestUpload.java:56)
 </failure>
-    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@39ed3c8d
-1
-1.5
-https://www.linkedin.com/login?trk=guest_homepage-basic_nav-header-signin,
-1.5
-https://www.linkedin.com/login?trk=guest_homepage-basic_nav-header-signin,hariveeranki66@gmail.com,
-1.5
-https://www.linkedin.com/login?trk=guest_homepage-basic_nav-header-signin,hariveeranki66@gmail.com,Cheetos6^ ,
-1.5
-https://www.linkedin.com/login?trk=guest_homepage-basic_nav-header-signin,hariveeranki66@gmail.com,Cheetos6^ ,firefox,
-1.5
-1.5
-https://www.linkedin.com/login?trk=guest_homepage-basic_nav-header-signin,hariveeranki66@gmail.com,Cheetos6^ ,firefox,hari,
-1.5
-https://www.linkedin.com/login?trk=guest_homepage-basic_nav-header-signin,hariveeranki66@gmail.com,Cheetos6^ ,firefox,hari,veeranki,
-2
-3
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@6f75e721
+90
 </system-out>
-    <system-err>Jun 12, 2019 12:21:59 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+    <system-err>Jun 18, 2019 12:44:47 PM org.openqa.selenium.remote.DesiredCapabilities firefox
 INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
-1560322322373	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;-marionette&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\gkokz\\AppData\\Local\\Temp\\rust_mozprofile.vR1tdBTCoHzf&quot;
-1560322329159	addons.webextension.screenshots@mozilla.org	WARN	Loading extension &apos;screenshots@mozilla.org&apos;: Reading manifest: Invalid extension permission: mozillaAddons
-1560322329162	addons.webextension.screenshots@mozilla.org	WARN	Loading extension &apos;screenshots@mozilla.org&apos;: Reading manifest: Invalid extension permission: resource://pdf.js/
-1560322329165	addons.webextension.screenshots@mozilla.org	WARN	Loading extension &apos;screenshots@mozilla.org&apos;: Reading manifest: Invalid extension permission: about:reader*
-1560322349794	Marionette	INFO	Listening on port 62373
-[Parent 10540, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
-1560322350109	Marionette	WARN	TLS certificate errors will be ignored for this session
-Jun 12, 2019 12:22:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+1560842089360	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;-marionette&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\gkokz\\AppData\\Local\\Temp\\rust_mozprofile.Frgl5fqgS9oX&quot;
+1560842093417	addons.webextension.screenshots@mozilla.org	WARN	Loading extension &apos;screenshots@mozilla.org&apos;: Reading manifest: Invalid extension permission: mozillaAddons
+1560842093418	addons.webextension.screenshots@mozilla.org	WARN	Loading extension &apos;screenshots@mozilla.org&apos;: Reading manifest: Invalid extension permission: resource://pdf.js/
+1560842093418	addons.webextension.screenshots@mozilla.org	WARN	Loading extension &apos;screenshots@mozilla.org&apos;: Reading manifest: Invalid extension permission: about:reader*
+[Parent 7268, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1560842111832	Marionette	INFO	Listening on port 56492
+[Child 8248, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8248, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1559936101/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 7268, Gecko_IOThread] WARNING: file z:/task_1559936101/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+1560842112423	Marionette	WARN	TLS certificate errors will be ignored for this session
+Jun 18, 2019 12:45:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
-  <testcase classname="com.webpp.TestLinkedinLoginPage" name="g" time="49.163">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at utils.ExcelDetails.writeExcel(ExcelDetails.java:171)
-	at com.webpp.TestLinkedinLoginPage.g(TestLinkedinLoginPage.java:50)
-</failure>
-    <system-out>Verified
-4
-</system-out>
-    <system-err>Jun 12, 2019 12:23:05 PM org.openqa.selenium.remote.DesiredCapabilities firefox
-INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
-1560322386033	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files\\Mozilla Firefox\\firefox.exe&quot; &quot;-marionette&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\gkokz\\AppData\\Local\\Temp\\rust_mozprofile.LxL0Z7H5U17A&quot;
-1560322390598	addons.webextension.screenshots@mozilla.org	WARN	Loading extension &apos;screenshots@mozilla.org&apos;: Reading manifest: Invalid extension permission: mozillaAddons
-1560322390607	addons.webextension.screenshots@mozilla.org	WARN	Loading extension &apos;screenshots@mozilla.org&apos;: Reading manifest: Invalid extension permission: resource://pdf.js/
-1560322390607	addons.webextension.screenshots@mozilla.org	WARN	Loading extension &apos;screenshots@mozilla.org&apos;: Reading manifest: Invalid extension permission: about:reader*
-1560322401248	Marionette	INFO	Listening on port 62570
-1560322401707	Marionette	WARN	TLS certificate errors will be ignored for this session
-Jun 12, 2019 12:23:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-JavaScript warning: https://static.licdn.com/sc/h/br/de0zactn9b5njhlggojcyx4fk, line 7549: unreachable code after return statement
-1560322427325	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
-bail@chrome://marionette/content/sync.js:224:64
-</system-err>
+  <testcase classname="com.webpp.TestUpload" name="startBrowser" time="70.069">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.webpp.SpeechTest" name="f" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.webpp.Test99GuruLogin" name="test_Home_Page_Appear_Correct" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.webpp.TestLinkedinLoginPage" name="g" time="0">
+    <skipped/>
   </testcase>
 </testsuite>

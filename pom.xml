@@ -8,7 +8,7 @@
 
   <name>MavenProject</name>
   <url>http://maven.apache.org</url>
-
+ 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -20,6 +20,23 @@
     <version>3.141.59</version>
 	</dependency>
 
+     <dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>4.0.1</version>
+    <scope>provided</scope>
+	</dependency>
+    
+    
+    
+    
+     
+	<dependency>
+    <groupId>org.mobicents.external.freetts</groupId>
+    <artifactId>freetts</artifactId>
+    <version>1.0</version>
+	</dependency>
+	
  
 	
     <dependency>
@@ -52,6 +69,17 @@
     <version>4.12</version>
     <scope>test</scope>
 </dependency>
+ 
+ 
+ 
+ <dependency>
+  <groupId>io.appium</groupId>
+  <artifactId>java-client</artifactId>
+  <version>7.0.0</version>
+</dependency>
+ 
+ 
+ 
  
   </dependencies>
 </project>

@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.webpp.SpeechTest"/>
+      <class name="com.Appium.ProfileChecking"/>
       
     </classes>
   </test> <!-- Test -->

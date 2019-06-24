@@ -3,11 +3,11 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.webpp.SpeechTest">
+      <class name="com.Appium.ProfileChecking">
         <methods>
-          <include name="f"/>
+          <include name="first"/>
         </methods>
-      </class> <!-- com.webpp.SpeechTest -->
+      </class> <!-- com.Appium.ProfileChecking -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

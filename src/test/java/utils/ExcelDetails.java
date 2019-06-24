@@ -29,7 +29,7 @@ public class ExcelDetails {
 	
     public String[] readExcel(String filePath,String fileName,String sheetName) throws IOException{
 
-    	//System.out.println("0.5");
+    	System.out.println("0.5");
 	    File file =    new File(filePath+"\\"+fileName);
 	
 	
@@ -52,7 +52,7 @@ public class ExcelDetails {
 	
 	    }
 	
-	    //System.out.println("0.6");
+	    System.out.println("0.6");
 	
 	    Sheet guru99Sheet = guru99Workbook.getSheet(sheetName);
 	
@@ -63,15 +63,15 @@ public class ExcelDetails {
 	     for(int i=0;i<rowCount;i++)
 	    	 a[i] = "";
 	     int count =0;
-	    // System.out.println("0.7");
+	     System.out.println("0.7");
 	    for (int i = 1; i < rowCount+1; i++) {
 	
 	        Row row = guru99Sheet.getRow(i);
-	       // System.out.println("0.71");
+	        System.out.println("0.71");
 	        //Create a loop to print cell valsues in a row
 	
 	        for (int j = 0; j < 1; j++) {
-	        	//System.out.println("0.75");
+	        	System.out.println("0.75");
 	            //Print Excel data in console
 	        	if(String.valueOf(row.getCell(j).getCellType()).equals("NUMERIC")) {
 	        		a[count] = String.valueOf( row.getCell(j).getNumericCellValue());
@@ -108,7 +108,7 @@ public class ExcelDetails {
     
     
     public void writeExcel(String filePath,String fileName,String sheetName,String[] dataToWrite,int num) throws IOException{
-    	//System.out.println("1");
+    	System.out.println("1");
         //Create an object of File class to open xlsx file
 
         File file =    new File(filePath+"\\"+fileName);
@@ -142,7 +142,7 @@ public class ExcelDetails {
             guru99Workbook = new HSSFWorkbook(inputStream);
 
         }    
-       // System.out.println("2");
+        System.out.println("2");
 
     //Read excel sheet by sheet name    
 
@@ -157,27 +157,27 @@ public class ExcelDetails {
     
     //Create a new row and append it at last of sheet
     int c =0;
-for (int i = 1; i < rowCount+1; i++) {
+for (int i = 1; i < 2; i++) {
     	
         Row row = sheet.getRow(i);
         
     //Create a loop over the cell of newly created Row
 
-    for(int j = num; j < num+1; j++){
+    for(int j = 1; j < 2; j++){
 
         //Fill data in row
-    	//System.out.println("4");
+    	System.out.println("4");
         Cell cell = row.createCell(j);
-       // System.out.println("4.25");
+       System.out.println("4.25");
         row.getCell(j).setCellValue(dataToWrite[c]);
-        c++;
-        //System.out.println("4.5");
+       
+        System.out.println("4.5");
 
     }
 }
 
     //Close input stream
-   // System.out.println("3");
+    System.out.println("3");
     inputStream.close();
 
     //Create an object of FileOutputStream class to create write data in excel file
@@ -195,42 +195,5 @@ for (int i = 1; i < rowCount+1; i++) {
     }
 
    
-    
-    public void writeExcel1(String filePath,String fileName,String sheetName,String[] dataToWrite) throws IOException{
-
-        File file =    new File(filePath+"\\"+fileName);
-        FileInputStream inputStream = new FileInputStream(file);
-        Workbook guru99Workbook = null;
-        String fileExtensionName = fileName.substring(fileName.indexOf("."));
-
-        if(fileExtensionName.equals(".xlsx")){
-        guru99Workbook = new XSSFWorkbook(inputStream);
-
-        }
-
-        else if(fileExtensionName.equals(".xls")){
-            guru99Workbook = new HSSFWorkbook(inputStream);
-
-        }    
-
-    Sheet sheet = guru99Workbook.getSheet(sheetName);
-
-    int rowCount = sheet.getLastRowNum()-sheet.getFirstRowNum();
-    System.out.println("dsvs" + rowCount);
-
-    
-    for (int i = 1; i < rowCount+1; i++) {
-    	
-        Row row = sheet.getRow(i);
-        for (int j = 1; j < 2; j++) {
-        	row.getCell(j).setCellType(CellType.STRING);
-        	row.getCell(j).setCellValue(dataToWrite[j]);
-        }
-    inputStream.close();
-    FileOutputStream outputStream = new FileOutputStream(file);
-    guru99Workbook.write(outputStream);
-    outputStream.close();
-	
-    	}
-    }
+      
 }

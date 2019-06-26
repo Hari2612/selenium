@@ -3,11 +3,12 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.Appium.ProfileChecking">
+      <class name="com.Appium.TestMyBag">
         <methods>
-          <include name="first"/>
+          <include name="g"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- com.Appium.ProfileChecking -->
+      </class> <!-- com.Appium.TestMyBag -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

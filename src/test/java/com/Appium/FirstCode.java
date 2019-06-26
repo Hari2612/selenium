@@ -49,9 +49,20 @@ public class FirstCode  extends Capabilities{
 				driver.findElement(By.id("com.whatsapp:id/send")).click();
 				}
 
-
+/*
+ * pages to be created
+SigninPage(username and verify all details)(while entering otp the mail stars one)
+HomePage(all the icons to be verified)
+Mybag page verify
+identify swipedown  and swipe up (swipe until element is displayed (do while loop)) until u find the requireditem to be ordered
+add the item to the cart and verify whether the cart shows the popup in the home page
+verify the costs in each page (first take the cost and verify whether it as same cost when u open the item)
+go to my bag and verify whether the item is added correctly
+check  the all buttons and verify the payments option and proceed
+ 
+ */
 			
-			
+	
 			
 			obj1.stopServer();
 	}

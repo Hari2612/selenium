@@ -3,7 +3,10 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.Appium.TestMyBag"/>
+    <class name="com.Appium.TestSignupPage"/>
+    <class name="com.Appium.TesthomePage"/>
+     <class name="com.Appium.TestMyBag"/>
+     
       
     </classes>
   </test> <!-- Test -->

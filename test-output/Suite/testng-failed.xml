@@ -3,12 +3,23 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
+      <class name="com.Appium.TestSignupPage">
+        <methods>
+          <include name="g"/>
+        </methods>
+      </class> <!-- com.Appium.TestSignupPage -->
       <class name="com.Appium.TestMyBag">
         <methods>
           <include name="g"/>
           <include name="f"/>
         </methods>
       </class> <!-- com.Appium.TestMyBag -->
+      <class name="com.Appium.TesthomePage">
+        <methods>
+          <include name="g"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- com.Appium.TesthomePage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

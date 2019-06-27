@@ -30,13 +30,15 @@ protected AppiumDriver<MobileElement> driver;
 		 System.out.println("signup Verified");
 	}
 	
-	public void EnterMobileNo(String s) {
+	public void EnterMobileNo(String s) throws Exception {
 		driver.findElement(By.id("com.ril.ajio:id/et_login_mobilenumber_emailid")).sendKeys(s);
 		((AndroidDriver<MobileElement>) driver).pressKeyCode(66);
 		 System.out.println("Mobile Verified");
+		 Thread.sleep(3000);
 	}
 	
 	public void ClickLoginWithOTP() throws Exception {
+		Thread.sleep(5000);
 		List<MobileElement> elements = driver.findElements(By.id("com.ril.ajio:id/loginpassword_btn_login"));
 		for(MobileElement element : elements) {
 			if(element.getAttribute("text").contains("LOGIN WITH OTP")) {

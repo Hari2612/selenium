@@ -56,7 +56,7 @@ public class HomePage extends Capabilities{
 		driver.findElement(By.id("com.ril.ajio:id/actionbar_category_image")).click();
 	}
 	
-	public void ClickCategory(String s ) {
+	public void ClickCategory(String s ) throws Exception {
 		
 		List<MobileElement> elements = driver.findElements(By.id("com.ril.ajio:id/home_category_name"));
 		for(MobileElement element : elements) {
@@ -64,6 +64,7 @@ public class HomePage extends Capabilities{
 				element.click();
 				break;
 			}
+			Thread.sleep(2000);
 		}
 	}
 	

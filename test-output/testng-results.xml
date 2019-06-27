@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="78747" started-at="2019-06-26T10:11:11Z" finished-at="2019-06-26T10:12:30Z">
+  <suite name="Suite" duration-ms="222030" started-at="2019-06-27T09:51:32Z" finished-at="2019-06-27T09:55:14Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="78747" started-at="2019-06-26T10:11:11Z" finished-at="2019-06-26T10:12:30Z">
+    <test name="Test" duration-ms="222030" started-at="2019-06-27T09:51:32Z" finished-at="2019-06-27T09:55:14Z">
       <class name="com.Appium.TestMyBag">
-        <test-method status="PASS" signature="f()[pri:0, instance:com.Appium.TestMyBag@3632be31]" name="f" duration-ms="78656" started-at="2019-06-26T15:41:11Z" finished-at="2019-06-26T15:42:30Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.Appium.TestMyBag@5a8e6209]" name="f" duration-ms="83034" started-at="2019-06-27T15:23:50Z" finished-at="2019-06-27T15:25:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="g()[pri:0, instance:com.Appium.TestMyBag@3632be31]" name="g" is-config="true" duration-ms="53" started-at="2019-06-26T15:42:30Z" finished-at="2019-06-26T15:42:30Z">
+        <test-method status="PASS" signature="g()[pri:0, instance:com.Appium.TestMyBag@5a8e6209]" name="g" is-config="true" duration-ms="75" started-at="2019-06-27T15:25:13Z" finished-at="2019-06-27T15:25:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- g -->
+        <test-method status="PASS" signature="g()[pri:0, instance:com.Appium.TestSignupPage@6d7b4f4c]" name="g" is-config="true" duration-ms="78" started-at="2019-06-27T15:25:14Z" finished-at="2019-06-27T15:25:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- g -->
+        <test-method status="PASS" signature="g()[pri:0, instance:com.Appium.TesthomePage@4b4523f8]" name="g" is-config="true" duration-ms="94" started-at="2019-06-27T15:25:14Z" finished-at="2019-06-27T15:25:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- g -->
       </class> <!-- com.Appium.TestMyBag -->
+      <class name="com.Appium.TesthomePage">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.Appium.TesthomePage@4b4523f8]" name="f" duration-ms="78073" started-at="2019-06-27T15:22:32Z" finished-at="2019-06-27T15:23:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- com.Appium.TesthomePage -->
+      <class name="com.Appium.TestSignupPage">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.Appium.TestSignupPage@6d7b4f4c]" name="f" duration-ms="60619" started-at="2019-06-27T15:21:32Z" finished-at="2019-06-27T15:22:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- com.Appium.TestSignupPage -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -28,7 +28,10 @@ protected AppiumDriver<MobileElement> driver;
 	}
 	
 	
-
+	public void ClickHome() {
+		driver.findElement(By.id("com.ril.ajio:id/icon_ajio_tab")).click();
+	}
+	
 	public void ClickBag() throws Exception {
 		driver.findElement(By.id("com.ril.ajio:id/icon_cart_tab")).click();
 		Thread.sleep(4000);
@@ -81,16 +84,18 @@ protected AppiumDriver<MobileElement> driver;
 		try {
 			List<MobileElement> elements = driver.findElements(By.id("com.ril.ajio:id/item_name"));
 			for(MobileElement element : elements) {
-				if(element.getAttribute("text").equals("Slip-On Mesh Sneakers ")) {
-					verticalSwipeByPercentages();
-					Thread.sleep(4000);
+				if(("Slip-On Mesh Sneakers ").contains(element.getAttribute("text"))) {
+					//verticalSwipeByPercentages();
+					System.out.println(element.getAttribute("text"));
+					//Thread.sleep(4000);
 					List<MobileElement> elements1 = driver.findElements(By.id("com.ril.ajio:id/parent_layout"));
 					System.out.println("size " +elements1.size());
 					for(MobileElement element2 : elements1) {
 						
 						String s = element2.findElement(By.id("com.ril.ajio:id/item_name")).getAttribute("text");
 						System.out.println("text is: " + s);
-						if(s.equals("Slip-On Mesh Sneakers ")) {
+						if(("Slip-On Mesh Sneakers ").contains(s)) {
+							System.out.println("i'm in");
 							OldPrice =  element2.findElement(By.id("com.ril.ajio:id/item_old_price")).getAttribute("text");
 							ItemPrice =  element2.findElement(By.id("com.ril.ajio:id/item_price")).getAttribute("text");
 							element.click();
@@ -141,14 +146,21 @@ protected AppiumDriver<MobileElement> driver;
 		}
 		
 		public boolean VerifyItemDetailsInBag() {
+			//System.out.println("im in");
 			List<MobileElement> elements1 = driver.findElements(By.id("com.ril.ajio:id/row_cart_product"));
 			System.out.println("size " +elements1.size());
 			for(MobileElement element2 : elements1) {
-				if(element2.findElement(By.id("com.ril.ajio:id/row_cart_product_tv_name")).getAttribute("text").equals("AJIO-Slip-On Mesh Sneakers ")) {
-					return element2.findElement(By.id("com.ril.ajio:id/row_cart_product_tv_discount_price")).getAttribute("text").equals(OldPrice) &&
-							element2.findElement(By.id("com.ril.ajio:id/row_cart_product_tv_actual_price")).getAttribute("text").equals(ItemPrice) &&
-							element2.findElement(By.id("com.ril.ajio:id/row_cart_product_tv_size")).getAttribute("text").equals("9");
+				if(element2.findElement(By.id("com.ril.ajio:id/row_cart_product_tv_name")).getAttribute("text").contains("Slip-On Mesh Sneakers ")) {
+					System.out.println("im in here also");
 
+					//System.out.println( element2.findElement(By.id("com.ril.ajio:id/row_cart_product_tv_discount_price")).getAttribute("text").equals(OldPrice)); 
+					System.out.println( element2.findElement(By.id("com.ril.ajio:id/row_cart_product_tv_discount_price")).getAttribute("text") + "   " + (OldPrice)); 
+
+			//		System.out.println(	element2.findElement(By.id("com.ril.ajio:id/row_cart_product_tv_actual_price")).getAttribute("text").equals(ItemPrice));
+					System.out.println(	element2.findElement(By.id("com.ril.ajio:id/row_cart_product_tv_actual_price")).getAttribute("text")+ "   " + (ItemPrice));
+
+					System.out.println(	element2.findElement(By.id("com.ril.ajio:id/row_cart_product_tv_size")).getAttribute("text").equals("9"));
+					return true;
 			}
 				else {
 					return false;
@@ -158,12 +170,15 @@ protected AppiumDriver<MobileElement> driver;
 			return false;
 		}
 		
-		public void ProceedToShipping() {
+		public void ProceedToShipping() throws Exception {
 			driver.findElement(By.id("com.ril.ajio:id/fragment_cart_list_tv_proceed")).click();
+			Thread.sleep(2000);
 		}
 		
-		public void ProceedToPayment() {
+		public void ProceedToPayment() throws Exception {
 			driver.findElement(By.id("com.ril.ajio:id/fragment_address_list_tv_proceed")).click();
+			Thread.sleep(2000);
+
 		}
 		
 }

@@ -137,6 +137,7 @@ public class TestMyBag extends MyBagPage{
   //arrays = 150+
   //Graphs = 64
   //searching = 59
+  //sorting -104
   @AfterTest
   public void g() {
 	  obj1.stopServer();
